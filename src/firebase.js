@@ -4,15 +4,15 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import { getAnalytics } from 'firebase/analytics';
-
+//FIREBASE-SETUP-START
 const firebaseConfig = {
-  apiKey: "AIzaSyBv_LR4luD38AhUMTn-5n_f1mx_wxrG0TY",
-  authDomain: "learnul.firebaseapp.com",
-  projectId: "learnul",
-  storageBucket: "learnul.firebasestorage.app",
-  messagingSenderId: "156945730226",
-  appId: "1:156945730226:web:852dbdd2be49bb3b15d7ab",
-  measurementId: "G-WEGFTVZWJB"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 const app = initializeApp(firebaseConfig);

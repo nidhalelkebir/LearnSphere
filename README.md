@@ -1,281 +1,121 @@
-# E-Learning Platform
+# 🎓 E-Learning Platform (LMS)
 
-A comprehensive, modern e-learning platform built with React that provides an interactive learning experience for students, teachers, and administrators.
+A modern, full-featured **E-Learning Platform** built with **React** that delivers an interactive learning experience for **students, teachers, and administrators**.
 
 ![Home Page](img/home.png)
 
-## Overview
+---
 
-This e-learning platform is a full-featured learning management system (LMS) designed to facilitate online education. It includes user authentication, course management, interactive lessons, quizzes, analytics, and administrative controls.
+⚠️ **IMPORTANT NOTICE**  
+This project is a **prototype currently under active development**.  
+The **backend is not finalized** and several features may be incomplete, unstable, or subject to change.
 
-## Features
+---
 
-### For Students
-- **Course Catalog**: Browse and enroll in available courses
+## 🚀 Overview
 
-![Courses](img/courses.png)
+This project is a comprehensive **Learning Management System (LMS)** designed for online education.  
+It supports course creation, interactive lessons, quizzes, analytics, and role-based dashboards.
 
-- **Interactive Lessons**: Engage with multimedia content including videos and interactive components
-- **Quizzes**: Take assessments with immediate feedback
-- **Progress Tracking**: Monitor learning progress with visual indicators
-- **Achievements**: Earn badges and certificates
-- **Notifications**: Stay updated with course announcements
+---
 
-![Notifications](img/notifications.png)
+## ✨ Features
 
-- **User Profile**: Manage personal information and preferences
+### 👨‍🎓 Students
+- 📚 **Course Catalog** – Browse and enroll in courses  
+  ![Courses](img/courses.png)
+- 🎥 **Interactive Lessons** – Videos & multimedia content
+- 📝 **Quizzes** – Instant feedback and scoring
+- 📊 **Progress Tracking** – Visual learning indicators
+- 🏆 **Achievements** – Badges & certificates
+- 🔔 **Notifications** – Course announcements  
+  ![Notifications](img/notifications.png)
+- 👤 **Profile Management**  
+  ![Profile](img/profile.png)
 
-![Profile](img/profile.png)
+---
 
-### For Teachers
-- **Course Management**: Create and manage courses
-- **Content Upload**: Upload multimedia and educational materials
-- **Analytics Dashboard**: View student engagement and performance metrics
+### 👩‍🏫 Teachers
+- 🛠 **Course Management** – Create & update courses
+- 📤 **Content Upload** – Videos, PDFs, and materials
+- 📈 **Analytics Dashboard** – Student engagement & performance  
+  ![Analytics](img/analytics.png)
+- 👥 **Class Management** – Track learners
+- 🧪 **Assessment Tools** – Create and grade quizzes
 
-![Analytics](img/analytics.png)
+---
 
-- **Class Management**: Organize and track student progress
-- **Assessment Tools**: Create and grade quizzes
+### 🛡 Administrators
+- 👤 **User Management**  
+  ![User Management](img/users.png)
+- 🗂 **Content Moderation**
+- 📊 **Platform Analytics**
+- ⚙️ **System Settings**  
+  ![Settings](img/settings.png)
 
-![User Management](img/users.png)
+---
 
-- **Content Management**: Oversee platform-wide content
-- **Platform Analytics**: Monitor system usage and performance
-- **System Settings**: Configure platform settings and features
+## 🧰 Tech Stack
 
-![Settings](img/settings.png)ounts
-- **Content Management**: Oversee platform-wide content
-- **Platform Analytics**: Monitor system usage and performance
-- **System Settings**: Configure platform settings and features
+| Layer | Technology |
+|------|-----------|
+| **Frontend** | React 19 |
+| **Styling** | Tailwind CSS, PostCSS |
+| **Routing** | React Router DOM |
+| **State** | Context API, TanStack React Query |
+| **Backend** | Firebase |
+| **Charts** | Chart.js, Recharts |
+| **Animations** | Framer Motion |
+| **Icons** | Lucide React, React Icons |
+| **Notifications** | React Hot Toast |
+| **Utilities** | Date-fns, UUID |
 
-## Tech Stack
+---
 
-- **Frontend**: React 19.2.3
-- **Styling**: Tailwind CSS, PostCSS
-- **Routing**: React Router DOM 7.12.0
-- **State Management**: React Context API, TanStack React Query 5.90.16
-- **Backend**: Firebase
-- **Charts & Analytics**: Chart.js, Recharts
-- **Animations**: Framer Motion 12.26.2
-- **Icons**: Lucide React, React Icons
-- **UI Components**: Custom components with Tailwind CSS
-- **Notifications**: React Hot Toast
-- **Utilities**: Date-fns, UUID
-
-## Project Structure
-
-```
+## 📁 Project Structure
 src/
 ├── components/
-│   ├── admin/              # Admin dashboard & management
-│   ├── auth/               # Authentication components
-│   ├── courses/            # Course-related components
-│   ├── dashboard/          # Dashboard layouts
-│   ├── error/              # Error pages
-│   ├── home/               # Landing page & info pages
-│   ├── layout/             # Layout components (Header, Footer, Sidebar)
-│   ├── teacher/            # Teacher-specific components
-│   └── ui/                 # Reusable UI components
-├── context/                # Context providers (Auth, Theme)
-├── services/               # Firebase & database services
-├── App.js                  # Main App component
-└── index.js                # Entry point
-```
+│ ├── admin/ # Admin dashboard
+│ ├── auth/ # Authentication
+│ ├── courses/ # Courses & lessons
+│ ├── dashboard/ # Dashboards
+│ ├── error/ # Error pages
+│ ├── home/ # Landing pages
+│ ├── layout/ # Header, Footer, Sidebar
+│ ├── teacher/ # Teacher features
+│ └── ui/ # Reusable UI components
+├── context/ # Auth & Theme providers
+├── services/ # Firebase services
+├── App.js
+└── index.js
+---
 
-## Getting Started
+## ⚙️ Getting Started
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn package manager
+- Node.js **v14+**
+- npm or yarn
 
 ### Installation
 
-1. Clone the repository:
 ```bash
 git clone <repository-url>
 cd e-learning
-```
-
-2. Install dependencies:
-```bash
 npm install
 ```
+## © Copyright & Usage Permission
 
-3. Set up Firebase:
-   - Create a Firebase project
-   - Configure your Firebase credentials in [src/firebase.js](src/firebase.js)
+© 2026 — All Rights Reserved
 
-### Available Scripts
+This project is an original work and is protected under international copyright laws.
 
-#### Development
-```bash
-npm start
-```
-Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) in your browser.
-The page will reload when you make changes.
+Any use of this project — including copying, modifying, distributing, deploying, or using it for commercial or non-commercial purposes — **requires prior explicit permission from the author**.
 
-#### Testing
-```bash
-npm test
-```
-Launches the test runner in interactive watch mode.
+👉 **If you need to use this project in any form, you must ask for my permission first.**
 
-#### Build
-```bash
-npm run build
-```
-Builds the app for production to the `build` folder.
-The build is minified with hashes for optimal performance.
+This repository is provided **for viewing and evaluation purposes only**.  
+The project is a **prototype under active development**, and the **backend is still under development and not production-ready**.
 
-#### Eject
-```bash
-npm run eject
-```
-**Note**: This is a one-way operation. Only use if you need full control over configuration.
+Unauthorized use is strictly prohibited.
 
-## Key Components
-
-### Authentication
-- **Login**: User authentication with email/password
-- **Register**: New account creation
-- **ForgotPassword**: Password reset functionality
-- **ProtectedRoute**: Routes that require authentication
-
-### Courses
-- **CourseCatalog**: Display all available courses
-- **CourseCard**: Individual course preview
-- **CourseDetail**: Detailed course information
-- **InteractiveLesson**: Multimedia lesson player
-- **QuizComponent**: Interactive quiz interface
-
-### Dashboards
-- **StudentDashboard**: Student learning overview
-- **TeacherDashboard**: Teacher course management
-- **AdminDashboard**: Platform administration
-- **AnalyticsDashboard**: Analytics and reporting
-
-### UI Components
-- **LoadingSpinner**: Loading indicator
-- **PageLoader**: Full-page loading state
-- **ProgressRing**: Visual progress indicator
-- **Notifications**: User notifications system
-
-## Configuration
-
-### Tailwind CSS
-Customize styling in [tailwind.config.js](tailwind.config.js)
-
-### PostCSS
-Configure CSS processing in [postcss.config.js](postcss.config.js)
-
-## Firebase Setup
-
-Configure your Firebase project credentials in [src/firebase.js](src/firebase.js):
-```javascript
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-```
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-
-## Performance Optimizations
-
-- Code splitting for faster initial load
-- Optimized production builds
-- React Query for efficient data fetching
-- Lazy loading of components
-- CSS optimization with Tailwind
-
-## Contributing
-
-1. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-2. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-3. Push to the branch (`git push origin feature/AmazingFeature`)
-4. Open a Pull Request
-
-## Deployment
-
-The app can be deployed to:
-- Vercel
-- Netlify
-- Firebase Hosting
-- AWS S3 + CloudFront
-- Any static hosting service
-
-Build the app and deploy the `build` folder to your hosting service.
-
-## Troubleshooting
-
-### Port Already in Use
-If port 3000 is already in use:
-```bash
-npm start -- --port 3001
-```
-
-### Firebase Connection Issues
-- Verify Firebase configuration in `src/firebase.js`
-- Check Firebase project settings and permissions
-- Ensure API keys are valid
-
-### Styling Issues
-- Clear npm cache: `npm cache clean --force`
-- Reinstall dependencies: `npm install`
-- Clear browser cache
-
-## Future Enhancements
-
-- [ ] Video streaming optimization
-- [ ] Peer-to-peer discussion forums
-- [ ] Advanced analytics
-- [ ] Certificate generation
-- [ ] Mobile app version
-- [ ] Offline content access
-- [ ] Integration with external APIs
-
-## License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
-## Support
-
-For support, email support@elearning.com or open an issue in the repository.
-
-## Acknowledgments
-
-- Built with [Create React App](https://create-react-app.dev/)
-- Icons from [Lucide React](https://lucide.dev/) and [React Icons](https://react-icons.github.io/react-icons/)
-- Charts powered by [Chart.js](https://www.chartjs.org/) and [Recharts](https://recharts.org/)
-- Backend services by [Firebase](https://firebase.google.com/)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-#   L e a r n S p h e r e 
- 
- 
+---
